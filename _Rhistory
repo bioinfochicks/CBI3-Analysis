@@ -1,0 +1,512 @@
+name = "Method")
+ggplot(newd, aes(x=newd$Time, y = newd$GrandMean, col="red")) +
+geom_line() +
+geom_line(aes(x=newd$Time, y = newd$GrandMedian, col="blue")) +
+geom_line(aes(x=newd$Time, y = newd$GrandRollingMean20, col="green")) +
+geom_line(aes(x=newd$Time, y = newd$GrandRollingMedian20, col="orange")) +
+geom_vline(xintercept = 50, col = "grey44", linetype="dashed") +
+geom_text(aes(x=60,y=4500, label = "P50", col="black")) +
+geom_vline(xintercept = 35, col = "grey44", linetype="dashed") +
+geom_text(aes(x=27,y=4500, label = "N35", col="black")) +
+geom_vline(xintercept = 95, col = "grey44", linetype="dashed") +
+geom_text(aes(x=105,y=4500, label = "N95", col="black")) +
+xlab("Time (mS)") +
+ylab("nV") +
+scale_colour_manual(values=c("red", "blue", "green", "orange","black" ),
+labels = c("Grand Average", "Grand Median",
+"Rolling Mean", "Rolling Median",
+"something"),
+name = "Method")
+##########Final plot of grand averages for all
+ggplot(newd, aes(x=newd$Time, y = newd$GrandMean)) +
+geom_line(aes(col="red")) +
+geom_line(aes(x=newd$Time, y = newd$GrandMedian, col="blue")) +
+geom_line(aes(x=newd$Time, y = newd$GrandRollingMean20, col="green")) +
+geom_line(aes(x=newd$Time, y = newd$GrandRollingMedian20, col="orange")) +
+geom_vline(xintercept = 50, col = "grey44", linetype="dashed") +
+geom_text(aes(x=60,y=4500, label = "P50", col="black")) +
+geom_vline(xintercept = 35, col = "grey44", linetype="dashed") +
+geom_text(aes(x=27,y=4500, label = "N35", col="black")) +
+geom_vline(xintercept = 95, col = "grey44", linetype="dashed") +
+geom_text(aes(x=105,y=4500, label = "N95", col="black")) +
+xlab("Time (mS)") +
+ylab("nV") +
+scale_colour_manual(values=c("red", "blue", "green", "orange","black" ),
+labels = c("Grand Average", "Grand Median",
+"Rolling Mean", "Rolling Median",
+"something"),
+name = "Method")
+##########Final plot of grand averages for all
+ggplot(newd, aes(x=newd$Time, y = newd$GrandMean)) +
+geom_line(aes(col="red")) +
+geom_line(aes(x=newd$Time, y = newd$GrandMedian, col="blue")) +
+geom_line(aes(x=newd$Time, y = newd$GrandRollingMean20, col="green")) +
+geom_line(aes(x=newd$Time, y = newd$GrandRollingMedian20, col="orange")) +
+geom_vline(xintercept = 50, col = "grey44", linetype="dashed") +
+geom_text(aes(x=60,y=4500, label = "P50")) +
+geom_vline(xintercept = 35, col = "grey44", linetype="dashed") +
+geom_text(aes(x=27,y=4500, label = "N35")) +
+geom_vline(xintercept = 95, col = "grey44", linetype="dashed") +
+geom_text(aes(x=105,y=4500, label = "N95")) +
+xlab("Time (mS)") +
+ylab("nV") +
+scale_colour_manual(values=c("red", "blue", "green", "orange","black" ),
+labels = c("Grand Average", "Grand Median",
+"Rolling Mean", "Rolling Median",
+"something"),
+name = "Method")
+ggplot(newd, aes(x=newd$Time, y = newd$GrandMean)) +
+geom_line(aes(col="red")) +
+# geom_line(aes(x=newd$Time, y = newd$GrandMedian, col="blue")) +
+#geom_line(aes(x=newd$Time, y = newd$GrandRollingMean20, col="green")) +
+#  geom_line(aes(x=newd$Time, y = newd$GrandRollingMedian20, col="orange")) +
+# geom_vline(xintercept = 50, col = "grey44", linetype="dashed") +
+geom_text(aes(x=60,y=4500, label = "P50")) +
+geom_vline(xintercept = 35, col = "grey44", linetype="dashed") +
+geom_text(aes(x=27,y=4500, label = "N35")) +
+geom_vline(xintercept = 95, col = "grey44", linetype="dashed") +
+geom_text(aes(x=105,y=4500, label = "N95")) +
+xlab("Time (mS)") +
+ylab("nV") +
+scale_colour_manual(values=c("red", "blue", "green", "orange" ),
+labels = c("Grand Average", "Grand Median",
+"Rolling Mean", "Rolling Median"),
+name = "Method")
+ggplot(newd, aes(x=newd$Time, y = newd$GrandMean)) +
+geom_line() +
+# geom_line(aes(x=newd$Time, y = newd$GrandMedian)) +
+#geom_line(aes(x=newd$Time, y = newd$GrandRollingMean20")) +
+#  geom_line(aes(x=newd$Time, y = newd$GrandRollingMedian20)) +
+geom_vline(xintercept = 50, col = "grey44", linetype="dashed") +
+geom_text(aes(x=60,y=4500, label = "P50")) +
+geom_vline(xintercept = 35, col = "grey44", linetype="dashed") +
+geom_text(aes(x=27,y=4500, label = "N35")) +
+geom_vline(xintercept = 95, col = "grey44", linetype="dashed") +
+geom_text(aes(x=105,y=4500, label = "N95")) +
+xlab("Time (mS)") +
+ylab("nV") +
+scale_colour_manual(#values=c("red", "blue", "green", "orange" ),
+labels = c("Grand Average", "Grand Median",
+"Rolling Mean", "Rolling Median"),
+name = "Method")
+##########Final plot of grand averages for all
+ggplot(newd, aes(x=newd$Time, y = newd$GrandMean)) +
+geom_line() +
+geom_line(aes(x=newd$Time, y = newd$GrandMedian)) +
+#geom_line(aes(x=newd$Time, y = newd$GrandRollingMean20")) +
+#  geom_line(aes(x=newd$Time, y = newd$GrandRollingMedian20)) +
+geom_vline(xintercept = 50, col = "grey44", linetype="dashed") +
+geom_text(aes(x=60,y=4500, label = "P50")) +
+geom_vline(xintercept = 35, col = "grey44", linetype="dashed") +
+geom_text(aes(x=27,y=4500, label = "N35")) +
+geom_vline(xintercept = 95, col = "grey44", linetype="dashed") +
+geom_text(aes(x=105,y=4500, label = "N95")) +
+xlab("Time (mS)") +
+ylab("nV") +
+scale_colour_manual(#values=c("red", "blue", "green", "orange" ),
+labels = c("Grand Average", "Grand Median",
+"Rolling Mean", "Rolling Median"),
+name = "Method")
+ggplot(newd, aes(x=newd$Time, y = newd$GrandMean, col = "red")) +
+geom_line() +
+geom_line(aes(x=newd$Time, y = newd$GrandMedian)) +
+#geom_line(aes(x=newd$Time, y = newd$GrandRollingMean20")) +
+#  geom_line(aes(x=newd$Time, y = newd$GrandRollingMedian20)) +
+geom_vline(xintercept = 50, col = "grey44", linetype="dashed") +
+geom_text(aes(x=60,y=4500, label = "P50")) +
+geom_vline(xintercept = 35, col = "grey44", linetype="dashed") +
+geom_text(aes(x=27,y=4500, label = "N35")) +
+geom_vline(xintercept = 95, col = "grey44", linetype="dashed") +
+geom_text(aes(x=105,y=4500, label = "N95")) +
+xlab("Time (mS)") +
+ylab("nV") +
+scale_colour_manual(#values=c("red", "blue", "green", "orange" ),
+labels = c("Grand Average", "Grand Median",
+"Rolling Mean", "Rolling Median"),
+name = "Method")
+##########Final plot of grand averages for all
+ggplot(newd, aes(x=newd$Time, y = newd$GrandMean)) +
+geom_line(aes(col = "red")) +
+geom_line(aes(x=newd$Time, y = newd$GrandMedian)) +
+#geom_line(aes(x=newd$Time, y = newd$GrandRollingMean20")) +
+#  geom_line(aes(x=newd$Time, y = newd$GrandRollingMedian20)) +
+geom_vline(xintercept = 50, col = "grey44", linetype="dashed") +
+geom_text(aes(x=60,y=4500, label = "P50")) +
+geom_vline(xintercept = 35, col = "grey44", linetype="dashed") +
+geom_text(aes(x=27,y=4500, label = "N35")) +
+geom_vline(xintercept = 95, col = "grey44", linetype="dashed") +
+geom_text(aes(x=105,y=4500, label = "N95")) +
+xlab("Time (mS)") +
+ylab("nV") +
+scale_colour_manual(#values=c("red", "blue", "green", "orange" ),
+labels = c("Grand Average", "Grand Median",
+"Rolling Mean", "Rolling Median"),
+name = "Method")
+##########Final plot of grand averages for all
+ggplot(newd, aes(x=newd$Time, y = newd$GrandMean)) +
+geom_line(aes(col = "red")) +
+geom_line(aes(x=newd$Time, y = newd$GrandMedian)) +
+#geom_line(aes(x=newd$Time, y = newd$GrandRollingMean20")) +
+#  geom_line(aes(x=newd$Time, y = newd$GrandRollingMedian20)) +
+geom_vline(xintercept = 50, col = "grey44", linetype="dashed") +
+geom_text(aes(x=60,y=4500, label = "P50")) +
+geom_vline(xintercept = 35, col = "grey44", linetype="dashed") +
+geom_text(aes(x=27,y=4500, label = "N35")) +
+geom_vline(xintercept = 95, col = "grey44", linetype="dashed") +
+geom_text(aes(x=105,y=4500, label = "N95")) +
+xlab("Time (mS)") +
+ylab("nV") +
+scale_colour_manual(values=c("red", "blue", "green", "orange" ),
+labels = c("Grand Average", "Grand Median",
+"Rolling Mean", "Rolling Median"),
+name = "Method")
+##########Final plot of grand averages for all
+ggplot(newd, aes(x=newd$Time, y = newd$GrandMean)) +
+geom_line(aes(col = "red")) +
+geom_line(aes(x=newd$Time, y = newd$GrandMedian, col="violet")) +
+#geom_line(aes(x=newd$Time, y = newd$GrandRollingMean20")) +
+#  geom_line(aes(x=newd$Time, y = newd$GrandRollingMedian20)) +
+geom_vline(xintercept = 50, col = "grey44", linetype="dashed") +
+geom_text(aes(x=60,y=4500, label = "P50")) +
+geom_vline(xintercept = 35, col = "grey44", linetype="dashed") +
+geom_text(aes(x=27,y=4500, label = "N35")) +
+geom_vline(xintercept = 95, col = "grey44", linetype="dashed") +
+geom_text(aes(x=105,y=4500, label = "N95")) +
+xlab("Time (mS)") +
+ylab("nV") +
+scale_colour_manual(values=c("red", "violet", "green", "orange" ),
+labels = c("Grand Average", "Grand Median",
+"Rolling Mean", "Rolling Median"),
+name = "Method")
+##########Final plot of grand averages for all
+ggplot(newd, aes(x=newd$Time, y = newd$GrandMean)) +
+geom_line(aes(col = "red")) +
+geom_line(aes(x=newd$Time, y = newd$GrandMedian, col="violet")) +
+geom_line(aes(x=newd$Time, y = newd$GrandRollingMean20", col="green")) +
+#  geom_line(aes(x=newd$Time, y = newd$GrandRollingMedian20)) +
+geom_vline(xintercept = 50, col = "grey44", linetype="dashed") +
+geom_text(aes(x=60,y=4500, label = "P50")) +
+geom_vline(xintercept = 35, col = "grey44", linetype="dashed") +
+geom_text(aes(x=27,y=4500, label = "N35")) +
+geom_vline(xintercept = 95, col = "grey44", linetype="dashed") +
+geom_text(aes(x=105,y=4500, label = "N95")) +
+xlab("Time (mS)") +
+ylab("nV") +
+scale_colour_manual(values=c("red", "violet", "green", "orange" ),
+labels = c("Grand Average", "Grand Median",
+"Rolling Mean", "Rolling Median"),
+name = "Method")
+ggplot(newd, aes(x=newd$Time, y = newd$GrandMean)) +
+geom_line(aes(col = "red")) +
+geom_line(aes(x=newd$Time, y = newd$GrandMedian, col="violet")) +
+geom_line(aes(x=newd$Time, y = newd$GrandRollingMean20, col="green")) +
+#  geom_line(aes(x=newd$Time, y = newd$GrandRollingMedian20)) +
+geom_vline(xintercept = 50, col = "grey44", linetype="dashed") +
+geom_text(aes(x=60,y=4500, label = "P50")) +
+geom_vline(xintercept = 35, col = "grey44", linetype="dashed") +
+geom_text(aes(x=27,y=4500, label = "N35")) +
+geom_vline(xintercept = 95, col = "grey44", linetype="dashed") +
+geom_text(aes(x=105,y=4500, label = "N95")) +
+xlab("Time (mS)") +
+ylab("nV") +
+scale_colour_manual(values=c("red", "violet", "green", "orange" ),
+labels = c("Grand Average", "Grand Median",
+"Rolling Mean", "Rolling Median"),
+name = "Method")
+ggplot(newd, aes(x=newd$Time, y = newd$GrandMean)) +
+geom_line(aes(col = "red")) +
+geom_line(aes(x=newd$Time, y = newd$GrandMedian, col="violet")) +
+geom_line(aes(x=newd$Time, y = newd$GrandRollingMean20, col="green")) +
+#  geom_line(aes(x=newd$Time, y = newd$GrandRollingMedian20)) +
+geom_vline(xintercept = 50, col = "grey44", linetype="dashed") +
+geom_text(aes(x=60,y=4500, label = "P50")) +
+geom_vline(xintercept = 35, col = "grey44", linetype="dashed") +
+geom_text(aes(x=27,y=4500, label = "N35")) +
+geom_vline(xintercept = 95, col = "grey44", linetype="dashed") +
+geom_text(aes(x=105,y=4500, label = "N95")) +
+xlab("Time (mS)") +
+ylab("nV") +
+scale_colour_manual(values=c("red", "violet", "green", "orange" ),
+labels = c("Grand Average", "Grand Median",
+"Rolling Mean", "Rolling Median"),
+name = "Method")
+ggplot(newd, aes(x=newd$Time, y = newd$GrandMean)) +
+geom_line(aes(col = "red")) +
+geom_line(aes(x=newd$Time, y = newd$GrandMedian, col="violet")) +
+#  geom_line(aes(x=newd$Time, y = newd$GrandRollingMean20, col="green")) +
+#  geom_line(aes(x=newd$Time, y = newd$GrandRollingMedian20)) +
+geom_vline(xintercept = 50, col = "grey44", linetype="dashed") +
+geom_text(aes(x=60,y=4500, label = "P50")) +
+geom_vline(xintercept = 35, col = "grey44", linetype="dashed") +
+geom_text(aes(x=27,y=4500, label = "N35")) +
+geom_vline(xintercept = 95, col = "grey44", linetype="dashed") +
+geom_text(aes(x=105,y=4500, label = "N95")) +
+xlab("Time (mS)") +
+ylab("nV") +
+scale_colour_manual(values=c("red", "violet", "green", "orange" ),
+labels = c("Grand Average", "Grand Median",
+"Rolling Mean", "Rolling Median"),
+name = "Method")
+##########Final plot of grand averages for all
+ggplot(newd, aes(x=newd$Time, y = newd$GrandMean)) +
+geom_line(aes(col = "red")) +
+geom_line(aes(x=newd$Time, y = newd$GrandMedian, col="violet")) +
+geom_line(aes(x=newd$Time, y = newd$GrandRollingMean20, col="green")) +
+#  geom_line(aes(x=newd$Time, y = newd$GrandRollingMedian20)) +
+geom_vline(xintercept = 50, col = "grey44", linetype="dashed") +
+geom_text(aes(x=60,y=4500, label = "P50")) +
+geom_vline(xintercept = 35, col = "grey44", linetype="dashed") +
+geom_text(aes(x=27,y=4500, label = "N35")) +
+geom_vline(xintercept = 95, col = "grey44", linetype="dashed") +
+geom_text(aes(x=105,y=4500, label = "N95")) +
+xlab("Time (mS)") +
+ylab("nV")
+ggplot(newd, aes(x=newd$Time, y = newd$GrandMean)) +
+geom_line(aes(col = "red")) +
+geom_line(aes(x=newd$Time, y = newd$GrandMedian, col="violet")) +
+geom_line(aes(x=newd$Time, y = newd$GrandRollingMean20, col="green")) +
+geom_line(aes(x=newd$Time, y = newd$GrandRollingMedian20)) +
+geom_vline(xintercept = 50, col = "grey44", linetype="dashed") +
+geom_text(aes(x=60,y=4500, label = "P50")) +
+geom_vline(xintercept = 35, col = "grey44", linetype="dashed") +
+geom_text(aes(x=27,y=4500, label = "N35")) +
+geom_vline(xintercept = 95, col = "grey44", linetype="dashed") +
+geom_text(aes(x=105,y=4500, label = "N95")) +
+xlab("Time (mS)") +
+ylab("nV") +
+scale_colour_manual(values=c("red", "violet", "green", "orange" ),
+labels = c("Grand Average", "Grand Median",
+"Rolling Mean", "Rolling Median"),
+name = "Method")
+##########Final plot of grand averages for all
+ggplot(newd, aes(x=newd$Time, y = newd$GrandMean)) +
+geom_line(aes(col = "red")) +
+geom_line(aes(x=newd$Time, y = newd$GrandMedian, col="violet")) +
+geom_line(aes(x=newd$Time, y = newd$GrandRollingMean20, col="green")) +
+geom_line(aes(x=newd$Time, y = newd$GrandRollingMedian20, col="orange")) +
+geom_vline(xintercept = 50, col = "grey44", linetype="dashed") +
+geom_text(aes(x=60,y=4500, label = "P50")) +
+geom_vline(xintercept = 35, col = "grey44", linetype="dashed") +
+geom_text(aes(x=27,y=4500, label = "N35")) +
+geom_vline(xintercept = 95, col = "grey44", linetype="dashed") +
+geom_text(aes(x=105,y=4500, label = "N95")) +
+xlab("Time (mS)") +
+ylab("nV") +
+scale_colour_manual(values=c("red", "violet", "green", "orange" ),
+labels = c("Grand Average", "Grand Median",
+"Rolling Mean", "Rolling Median"),
+name = "Method")
+ggplot(newd, aes(x=newd$Time, y = newd$GrandMean)) +
+geom_line(aes(col = "red")) +
+geom_line(aes(x=newd$Time, y = newd$GrandMedian, col="violet")) +
+geom_line(aes(x=newd$Time, y = newd$GrandRollingMean20, col="green")) +
+geom_line(aes(x=newd$Time, y = newd$GrandRollingMedian20, col="orange")) +
+geom_vline(xintercept = 50, col = "grey44", linetype="dashed") +
+geom_text(aes(x=60,y=4500, label = "P50")) +
+geom_vline(xintercept = 35, col = "grey44", linetype="dashed") +
+geom_text(aes(x=27,y=4500, label = "N35")) +
+geom_vline(xintercept = 95, col = "grey44", linetype="dashed") +
+geom_text(aes(x=105,y=4500, label = "N95")) +
+xlab("Time (mS)") +
+ylab("nV") +
+scale_colour_manual(values=c(),
+labels = c("Grand Average", "Grand Median",
+"Rolling Mean", "Rolling Median"),
+name = "Method")
+ggplot(newd, aes(x=newd$Time, y = newd$GrandMean)) +
+geom_line(aes(col = "red")) +
+geom_line(aes(x=newd$Time, y = newd$GrandMedian, col="violet")) +
+geom_line(aes(x=newd$Time, y = newd$GrandRollingMean20, col="green")) +
+geom_line(aes(x=newd$Time, y = newd$GrandRollingMedian20, col="orange")) +
+geom_vline(xintercept = 50, col = "grey44", linetype="dashed") +
+geom_text(aes(x=60,y=4500, label = "P50")) +
+geom_vline(xintercept = 35, col = "grey44", linetype="dashed") +
+geom_text(aes(x=27,y=4500, label = "N35")) +
+geom_vline(xintercept = 95, col = "grey44", linetype="dashed") +
+geom_text(aes(x=105,y=4500, label = "N95")) +
+xlab("Time (mS)") +
+ylab("nV") +
+scale_colour_discrete(values=c("red", "violet", "green", "orange" ),
+labels = c("Grand Average", "Grand Median",
+"Rolling Mean", "Rolling Median"),
+name = "Method")
+ggplot(newd, aes(x=newd$Time, y = newd$GrandMean)) +
+geom_line(aes(col = "red")) +
+geom_line(aes(x=newd$Time, y = newd$GrandMedian, col="violet")) +
+geom_line(aes(x=newd$Time, y = newd$GrandRollingMean20, col="green")) +
+geom_line(aes(x=newd$Time, y = newd$GrandRollingMedian20, col="orange")) +
+geom_vline(xintercept = 50, col = "grey44", linetype="dashed") +
+geom_text(aes(x=60,y=4500, label = "P50")) +
+geom_vline(xintercept = 35, col = "grey44", linetype="dashed") +
+geom_text(aes(x=27,y=4500, label = "N35")) +
+geom_vline(xintercept = 95, col = "grey44", linetype="dashed") +
+geom_text(aes(x=105,y=4500, label = "N95")) +
+xlab("Time (mS)") +
+ylab("nV") +
+scale_colour_discrete(labels = c("Grand Average", "Grand Median",
+"Rolling Mean", "Rolling Median"),
+name = "Method")
+ggplot(newd, aes(x=newd$Time, y = newd$GrandMean)) +
+geom_line(aes(col = "red")) +
+geom_line(aes(x=newd$Time, y = newd$GrandMedian, col="violet")) +
+geom_line(aes(x=newd$Time, y = newd$GrandRollingMean20, col="green")) +
+geom_line(aes(x=newd$Time, y = newd$GrandRollingMedian20, col="orange")) +
+geom_vline(xintercept = 50, col = "grey44", linetype="dashed") +
+geom_text(aes(x=60,y=4500, label = "P50")) +
+geom_vline(xintercept = 35, col = "grey44", linetype="dashed") +
+geom_text(aes(x=27,y=4500, label = "N35")) +
+geom_vline(xintercept = 95, col = "grey44", linetype="dashed") +
+geom_text(aes(x=105,y=4500, label = "N95")) +
+xlab("Time (mS)") +
+ylab("nV")
+ggplot(newd, aes(x=newd$Time, y = newd$GrandMean)) +
+geom_line(aes(col = "red")) +
+# geom_line(aes(x=newd$Time, y = newd$GrandMedian, col="violet")) +
+#geom_line(aes(x=newd$Time, y = newd$GrandRollingMean20, col="green")) +
+geom_line(aes(x=newd$Time, y = newd$GrandRollingMedian20, col="orange")) +
+geom_vline(xintercept = 50, col = "grey44", linetype="dashed") +
+geom_text(aes(x=60,y=4500, label = "P50")) +
+geom_vline(xintercept = 35, col = "grey44", linetype="dashed") +
+geom_text(aes(x=27,y=4500, label = "N35")) +
+geom_vline(xintercept = 95, col = "grey44", linetype="dashed") +
+geom_text(aes(x=105,y=4500, label = "N95")) +
+xlab("Time (mS)") +
+ylab("nV")
+ggplot(newd, aes(x=newd$Time, y = newd$GrandMean)) +
+geom_line(aes(col = "red")) +
+geom_line(aes(x=newd$Time, y = newd$GrandMedian, col="violet")) +
+geom_line(aes(x=newd$Time, y = newd$GrandRollingMean20, col="green")) +
+geom_line(aes(x=newd$Time, y = newd$GrandRollingMedian20, col="orange")) +
+geom_vline(xintercept = 50, col = "grey44", linetype="dashed") +
+geom_text(aes(x=60,y=4500, label = "P50")) +
+geom_vline(xintercept = 35, col = "grey44", linetype="dashed") +
+geom_text(aes(x=27,y=4500, label = "N35")) +
+geom_vline(xintercept = 95, col = "grey44", linetype="dashed") +
+geom_text(aes(x=105,y=4500, label = "N95")) +
+xlab("Time (mS)") +
+ylab("nV") +
+scale_colour_discrete(labels = c("Grand Average", "Grand Median",
+"Rolling Mean", "Rolling Median"),
+name = "Method")
+ggplot(newd, aes(x=newd$Time, y = newd$GrandMean)) +
+geom_line(aes()) +
+geom_line(aes(x=newd$Time, y = newd$GrandMedian)) +
+geom_line(aes(x=newd$Time, y = newd$GrandRollingMean20)) +
+geom_line(aes(x=newd$Time, y = newd$GrandRollingMedian20)) +
+geom_vline(xintercept = 50, col = "grey44", linetype="dashed") +
+geom_text(aes(x=60,y=4500, label = "P50")) +
+geom_vline(xintercept = 35, col = "grey44", linetype="dashed") +
+geom_text(aes(x=27,y=4500, label = "N35")) +
+geom_vline(xintercept = 95, col = "grey44", linetype="dashed") +
+geom_text(aes(x=105,y=4500, label = "N95")) +
+xlab("Time (mS)") +
+ylab("nV") +
+scale_colour_discrete(labels = c("Grand Average", "Grand Median",
+"Rolling Mean", "Rolling Median"),
+name = "Method")
+ggplot(newd, aes(x=newd$Time, y = newd$GrandMean)) +
+geom_line(aes(col="violet")) +
+geom_line(aes(x=newd$Time, y = newd$GrandMedian)) +
+geom_line(aes(x=newd$Time, y = newd$GrandRollingMean20)) +
+geom_line(aes(x=newd$Time, y = newd$GrandRollingMedian20)) +
+geom_vline(xintercept = 50, col = "grey44", linetype="dashed") +
+geom_text(aes(x=60,y=4500, label = "P50")) +
+geom_vline(xintercept = 35, col = "grey44", linetype="dashed") +
+geom_text(aes(x=27,y=4500, label = "N35")) +
+geom_vline(xintercept = 95, col = "grey44", linetype="dashed") +
+geom_text(aes(x=105,y=4500, label = "N95")) +
+xlab("Time (mS)") +
+ylab("nV") +
+scale_colour_discrete(labels = c("Grand Average", "Grand Median",
+"Rolling Mean", "Rolling Median"),
+name = "Method")
+##########Final plot of grand averages for all
+ggplot(newd, aes(x=newd$Time, y = newd$GrandMean)) +
+geom_line(aes()) +
+geom_line(aes(x=newd$Time, y = newd$GrandMedian)) +
+geom_line(aes(x=newd$Time, y = newd$GrandRollingMean20)) +
+geom_line(aes(x=newd$Time, y = newd$GrandRollingMedian20, col = "violet")) +
+geom_vline(xintercept = 50, col = "grey44", linetype="dashed") +
+geom_text(aes(x=60,y=4500, label = "P50")) +
+geom_vline(xintercept = 35, col = "grey44", linetype="dashed") +
+geom_text(aes(x=27,y=4500, label = "N35")) +
+geom_vline(xintercept = 95, col = "grey44", linetype="dashed") +
+geom_text(aes(x=105,y=4500, label = "N95")) +
+xlab("Time (mS)") +
+ylab("nV") +
+scale_colour_discrete(labels = c("Grand Average", "Grand Median",
+"Rolling Mean", "Rolling Median"),
+name = "Method")
+##########Final plot of grand averages for all
+ggplot(newd, aes(x=newd$Time, y = newd$GrandMean)) +
+geom_line(aes()) +
+geom_line(aes(x=newd$Time, y = newd$GrandMedian)) +
+geom_line(aes(x=newd$Time, y = newd$GrandRollingMean20)) +
+geom_line(aes(x=newd$Time, y = newd$GrandRollingMedian20, col = "")) +
+geom_vline(xintercept = 50, col = "grey44", linetype="dashed") +
+geom_text(aes(x=60,y=4500, label = "P50")) +
+geom_vline(xintercept = 35, col = "grey44", linetype="dashed") +
+geom_text(aes(x=27,y=4500, label = "N35")) +
+geom_vline(xintercept = 95, col = "grey44", linetype="dashed") +
+geom_text(aes(x=105,y=4500, label = "N95")) +
+xlab("Time (mS)") +
+ylab("nV") +
+scale_colour_discrete(labels = c("Grand Average", "Grand Median",
+"Rolling Mean", "Rolling Median"),
+name = "Method")
+ggplot(newd, aes(x=newd$Time, y = newd$GrandMean)) +
+geom_line(aes(col="")) +
+geom_line(aes(x=newd$Time, y = newd$GrandMedian)) +
+geom_line(aes(x=newd$Time, y = newd$GrandRollingMean20)) +
+geom_line(aes(x=newd$Time, y = newd$GrandRollingMedian20 )) +
+geom_vline(xintercept = 50, col = "grey44", linetype="dashed") +
+geom_text(aes(x=60,y=4500, label = "P50")) +
+geom_vline(xintercept = 35, col = "grey44", linetype="dashed") +
+geom_text(aes(x=27,y=4500, label = "N35")) +
+geom_vline(xintercept = 95, col = "grey44", linetype="dashed") +
+geom_text(aes(x=105,y=4500, label = "N95")) +
+xlab("Time (mS)") +
+ylab("nV") +
+scale_colour_discrete(labels = c("Grand Average", "Grand Median",
+"Rolling Mean", "Rolling Median"),
+name = "Method")
+ggplot(newd, aes(x=newd$Time, y = newd$GrandMean, col="")) +
+geom_line(aes()) +
+geom_line(aes(x=newd$Time, y = newd$GrandMedian)) +
+geom_line(aes(x=newd$Time, y = newd$GrandRollingMean20)) +
+geom_line(aes(x=newd$Time, y = newd$GrandRollingMedian20 )) +
+geom_vline(xintercept = 50, col = "grey44", linetype="dashed") +
+geom_text(aes(x=60,y=4500, label = "P50")) +
+geom_vline(xintercept = 35, col = "grey44", linetype="dashed") +
+geom_text(aes(x=27,y=4500, label = "N35")) +
+geom_vline(xintercept = 95, col = "grey44", linetype="dashed") +
+geom_text(aes(x=105,y=4500, label = "N95")) +
+xlab("Time (mS)") +
+ylab("nV") +
+scale_colour_discrete(labels = c("Grand Average", "Grand Median",
+"Rolling Mean", "Rolling Median"),
+name = "Method")
+##########Final plot of grand averages for all
+ggplot(newd, aes(x=newd$Time, y = newd$GrandMean)) +
+geom_line(aes()) +
+geom_line(aes(x=newd$Time, y = newd$GrandMedian)) +
+geom_line(aes(x=newd$Time, y = newd$GrandRollingMean20)) +
+geom_line(aes(x=newd$Time, y = newd$GrandRollingMedian20 )) +
+geom_vline(xintercept = 50, col = "grey44", linetype="dashed") +
+geom_text(aes(x=60,y=4500, label = "P50")) +
+geom_vline(xintercept = 35, col = "grey44", linetype="dashed") +
+geom_text(aes(x=27,y=4500, label = "N35")) +
+geom_vline(xintercept = 95, col = "grey44", linetype="dashed") +
+geom_text(aes(x=105,y=4500, label = "N95")) +
+xlab("Time (mS)") +
+ylab("nV") +
+scale_colour_discrete(labels = c("Grand Average", "Grand Median",
+"Rolling Mean", "Rolling Median"),
+name = "Method")
+mnewd <- melt(newd, id= newd$Time)
+mnewd <- melt(newd, id= newd$Time, na.rm = T )
+mnewd <- melt(newd, id= newd$Time, na.rm = F)
+mnewd <- melt(newd, id= newd$Time, na.omit = T)
+mnewd <- melt(newd, id= newd$Time, na.rm = T )
+mnewd <- melt(newd, id= newd$Time, na.rm = TRUE )
+View(mdata)
